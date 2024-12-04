@@ -1,0 +1,148 @@
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-brands fa-quinscape"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+      aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav me-auto ms-auto w-50">
+        <li class="nav-item p-2">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#">What's New?</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#">Explore</a>
+        </li>
+        <li class="nav-item dropdown p-2">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false"></a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-light" href="#">About Snapistry</a>
+            <a class="dropdown-item text-light" href="#">Terms & Conditions</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex w-100">
+        <!-- Search input with icon -->
+        <div class="input-group me-sm-2">
+          <span class="input-group-text">
+            <i class="fa-brands fa-searchengin"></i>
+          </span>
+          <input class="form-control" type="search" placeholder="Search for Images, Videos, Recipes..."
+            aria-label="Search">
+        </div>
+
+        <!-- Login and Sign Up buttons -->
+        <button type="button" class="btn btn-info my-2 my-sm-0 border rounded" data-bs-toggle="modal"
+          data-bs-target="#loginModal" style="width:100px;">Login</button>
+        <button type="button" class="btn btn-danger my-2 my-sm-0 border rounded ms-2" data-bs-toggle="modal"
+          data-bs-target="#signupModal" style="width:100px;">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog w-100 h-100 d-flex justify-content-center align-items-center">
+      <div class="modal-content rounded-4 shadow-lg">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title fw-bolder" id="loginModalLabel">Login | Existing User</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-floating mb-3 text-dark">
+              <input type="email" class="form-control bg-light" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email/UserName/Phone Number</label>
+            </div>
+            <div class="form-floating mb-3 text-dark">
+              <input type="password" class="form-control bg-light" id="floatingPassword" placeholder="Password"
+                autocomplete="off">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div>
+                <a href="#" class="text-muted small">Forgot Password?</a>
+              </div>
+              <div>
+                <a href="#" data-bs-toggle="modal"
+                data-bs-target="#signupModal" class="text-muted small">New User? Sign Up</a>
+              </div>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary py-2 fs-6">Login</button>
+              <button type="reset" class="btn btn-dark py-2 fs-6">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SignUp Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog w-100 h-100 d-flex justify-content-center align-items-center">
+      <div class="modal-content rounded-4 shadow-lg">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title fw-bolder" id="signupModalLabel">Sign Up | New User</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-floating mb-3 text-dark">
+              <input type="text" class="form-control bg-light" id="floatingInput" placeholder="First Name">
+              <label for="floatingInput">First name</label>
+            </div>
+            <div class="form-floating mb-3 text-dark">
+              <input type="text" class="form-control bg-light" id="floatingInput" placeholder="Last Name">
+              <label for="floatingInput">Last name</label>
+            </div>
+            <div class="form-floating mb-3 text-dark">
+              <input type="number" class="form-control bg-light" id="floatingInput" placeholder="Contact Number">
+              <label for="floatingInput">Contact Number</label>
+            </div>
+            <div class="form-floating mb-3 text-dark">
+              <input type="text" class="form-control bg-light" id="floatingInput" placeholder="Dont use existing username">
+              <label for="floatingInput">Create Username</label>
+            </div>
+            <div class="form-floating mb-3 text-dark">
+              <input type="email" class="form-control bg-light" id="floatingInput" placeholder="Email">
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3 text-dark">
+              <input type="password" class="form-control bg-light" id="floatingPassword" placeholder="Password"
+                autocomplete="off">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div>
+                <a href="#" data-bs-toggle="modal"
+                data-bs-target="#loginModal" class="text-muted small">Existing User? Login</a>
+              </div>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary py-2 fs-6">Sign Up</button>
+              <button type="reset" class="btn btn-dark py-2 fs-6">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Animation for Modal appearance
+  $('#loginModal').on('show.bs.modal', function (e) {
+    $(this).find('.modal-dialog').addClass('zoomIn');
+  });
+  $('#signupModal').on('show.bs.modal', function (e) {
+    $(this).find('.modal-dialog').addClass('zoomIn');
+  });
+</script>

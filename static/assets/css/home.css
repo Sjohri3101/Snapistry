@@ -1,0 +1,224 @@
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+}
+ /* Flex container to arrange marquee side by side */
+ .marquee-flex-container {
+    display: flex;
+    gap: 25px; /* Add some space between the marquee containers */
+    background-color: rgba(0, 0, 0, 0.873);
+    /* background: linear-gradient(to center, black, rgb(223, 223, 223)); */
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .front{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 100%;
+    height: 500px;
+  }
+
+
+/* Container for images and button */
+.custom-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+/* General styles for images inside the container */
+.custom-container img {
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+}
+
+/* Image 1 (left large image) */
+.custom-container img.first-image {
+  width: 50%;
+  height: 100%;
+}
+
+/* Image 2 (center smaller image) */
+.custom-container img.second-image {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+/* Image 3 (right small image) */
+.custom-container img.third-image {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 100px;
+  left: 350px;
+}
+
+
+/* Button positioning and style */
+.custom-container button {
+  position: absolute;
+  top: 350px;
+  left: 350px;
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.custom-container1{
+  /* position: absolute; */
+}
+.custom-container1 img {
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+}
+.custom-container1 img.furniture-image1{
+  position: relative;
+  width: 30%;
+  height: 60%;
+  box-shadow: 0px 0px 10px grey;
+
+}
+.custom-container1 img.furniture-image2{
+  position: relative;
+  width: 25%;
+  height: 40%;
+  box-shadow: 0px 0px 10px grey;
+  top:-5%;
+  left:2%;
+}
+.custom-container1 img.furniture-image3{
+  position: relative;
+  width: 15%;
+  height: 40%;
+  box-shadow: 0px 0px 10px grey;
+  left:-23%;
+  top: 40%;
+}
+.custom-container1 img.furniture-image4{
+  position: relative;
+  width: 25%;
+  height: 30%;
+  box-shadow: 0px 0px 10px grey;
+  left: -20%;
+  top: 35%;
+}
+.custom-container1 img.furniture-image5{
+  position: relative;
+  width: 30%;
+  height: 30%;
+  box-shadow: 0px 0px 10px grey;
+  top: 5%;
+}
+
+.travel-background{
+  height: 600px;
+  width:40%; 
+  background-image: url('/static/assets/img/webimages/10.jpg'); 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  background-color: red;
+}
+.travel-image{
+  width:40%;
+  height: 60%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+  position: relative;
+  left : 8%;
+  top: 10%;
+}
+.travel-image1{
+  width:40%;
+  height: 60%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+  position: relative;
+  left : 10%;
+  top: 10%;
+}
+.travel-image2{
+  width:30%;
+  height: 30%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px grey;
+  position: relative;
+  left : 35%;
+  top: -10%;
+}
+.front1{
+  background-color: rgba(0, 0, 0, 0.501);
+  width: 100%;
+  height: 850px;
+}
+/* Responsive styles */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+  .custom-container img.first-image {
+    width: 60%;
+    height: auto;
+  }
+
+  .custom-container img.second-image {
+    width: 70%;
+    height: auto;
+    top: 15px;
+    left: 15px;
+  }
+
+  .custom-container img.third-image {
+    width: 50%;
+    height: auto;
+    top: 120px;
+    left: 20px;
+  }
+
+  .custom-container button {
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  .custom-container img.first-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-container img.second-image {
+    width: 100%;
+    height: auto;
+    top: 10px;
+    left: 0;
+  }
+
+  .custom-container img.third-image {
+    width: 80%;
+    height: auto;
+    top: 130px;
+    left: 10px;
+  }
+
+  .custom-container button {
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 14px;
+  }
+}

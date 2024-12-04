@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Snapistry{% endblock %}</title>
+
+    <!-- <link rel="stylesheet" href="{% static 'css/index.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fontawesome/css/brands.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fontawesome/css/solid.min.css' %}">
+    
+    {% block styles %}{% endblock %}
+</head>
+<body>
+
+    {% block header %}
+    {% include 'header.html' %}
+    {% endblock %}
+
+    
+    {% block content %}
+    <!-- Main content will be injected here -->
+        
+    {% endblock %}
+    
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock %}
+
+    <script src="{% static 'assets/jquery/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    
+    {% block scripts %} {% endblock %}
+</body>
+</html>
